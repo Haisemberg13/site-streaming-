@@ -1,0 +1,231 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #121212;
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+.header {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 28px;
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff9800;
+}
+
+.btn-teste {
+    background: linear-gradient(135deg, #ff9800, #f44336);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-teste:hover {
+    background: linear-gradient(135deg, #f44336, #ff9800);
+    transform: scale(1.05);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://example.com/tech-background.jpg') no-repeat center center/cover;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background: linear-gradient(135deg, #ff9800, #f44336);
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn-primary:hover {
+    background: linear-gradient(135deg, #f44336, #ff9800);
+    transform: scale(1.05);
+}
+
+/* Seções */
+.destaques,
+.planos,
+.contato {
+    padding: 50px 20px;
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.destaques h2,
+.planos h2,
+.contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ff9800;
+}
+
+/* Cartões de Destaques */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #292929;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Tabela de Planos */
+.tabela-planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plano {
+    background: #292929;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plano h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ff9800;
+}
+
+.plano p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.plano button {
+    background: linear-gradient(135deg, #ff9800, #f44336);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.plano button:hover {
+    background: linear-gradient(135deg, #f44336, #ff9800);
+    transform: scale(1.05);
+}
+
+.plano:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Rodapé */
+.footer {
+    background: #121212;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
